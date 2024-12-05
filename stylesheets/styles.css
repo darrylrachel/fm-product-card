@@ -18,13 +18,17 @@ body {
   background-color: var(--cream);
   font-family: var(--ff-main);
   color: var(--gray-blue);
-  /* height: 100vh; */
   margin: 0;
   font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cyan);
 }
 
 @media screen and (min-width: 375px) {
@@ -64,7 +68,6 @@ body {
     font-weight: 500;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    /* padding: 15px 0; */
   }
 
   .content .heading {
@@ -85,9 +88,7 @@ body {
   .content .price {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     height: 100%;
-    /* justify-content: center; */
   }
 
   .price .current-price {
@@ -123,6 +124,13 @@ body {
     padding-top: 5px;
   }
 
+  .cta button:hover {
+    background-color: #1a4032;
+    color: #fff;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+  }
+
   .cta button .cart-icon {
     margin: 0 10px 0 0;
   }
@@ -136,7 +144,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     height: 450px;
-    /* align-items: center; */
   }
 
   .hero {
@@ -183,9 +190,7 @@ body {
   .content .price {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     height: 50px;
-    /* justify-content: center; */
   }
 
   .price .current-price {
